@@ -1,0 +1,16 @@
+#项目上下文和端口号
+server:
+  port: 8080
+  servlet:
+    context-path: /eureka-provider
+
+#表示注册中心该应用(application)的名称
+spring:
+  application:
+    name: eureka-provider
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
