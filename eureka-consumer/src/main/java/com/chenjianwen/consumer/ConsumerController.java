@@ -11,6 +11,10 @@ public class ConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     * 基于ribbon实现消费服务，通过http调用生产者服务
+     * @return
+     */
     @RequestMapping(value="/consumer")
     public Object consumer(){
         return restTemplate.getForObject("http://localhost:8080/eureka-provider/provider",String.class);
