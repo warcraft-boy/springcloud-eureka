@@ -7,6 +7,7 @@
     <groupId>com.chenjianwen</groupId>
     <artifactId>springcloud-eureka</artifactId>
     <version>20190714</version>
+    <packaging>pom</packaging>   <!--多模块项目外层的pom.xml的jar包打pom格式，而不是jar-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -17,6 +18,7 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-provider</module>
+        <module>eureka-consumer</module>
     </modules>
 
     <properties>
