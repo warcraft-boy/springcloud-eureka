@@ -11,12 +11,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class EurekaConsumerApplication {
 
-    @Bean
-    @LoadBalanced  //添加LoadBalanced使ribbon具有负载均衡的能力
-    public RestTemplate getRestTemplate(){
-        return new RestTemplate();
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(EurekaConsumerApplication.class, args);
     }
